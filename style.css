@@ -32,14 +32,23 @@
 #carousel .overlay .row {
     height: 100%;
 }
-.apartments {
+.apartments,
+.houses {
     background-color: #212529;
 }
-.apartments .card {
+.card {
     background-color: #fff;
     margin-bottom: 50px;
 }
 .section-title {
     color: #fff;
     background-color: #212529;
+}
+#footer {
+    background-color: #107c7c;
+    color: aliceblue;
+}
+#footer a {
+    text-decoration: none;
+    color: #000;
 }
