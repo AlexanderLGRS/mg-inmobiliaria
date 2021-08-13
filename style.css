@@ -1,23 +1,42 @@
+:root {
+    --principal-color: #4d18c7;
+    --secondary-color: #212529;
+    --third-color: #fff;
+    --principal-font: "Anton", sans-serif;
+    --secondary-font: "Prompt", sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+.navbar {
+    font-family: var(--principal-font);
+}
+
 .navbar-nav {
     margin-left: auto;
+    font-family: var(--principal-font);
 }
 
-
-}
 #main .carousel-inner img {
     max-height: 70vh;
     object-fit: cover;
     filter: grayscale(70%);
 }
+
+#aboutUs .carousel-inner img {
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
 #carousel {
     position: relative;
 }
+
 #carousel .overlay {
     position: absolute;
     top: 0;
@@ -25,30 +44,71 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--third-color);
     z-index: 1;
 }
+
 #carousel .overlay .container,
 #carousel .overlay .row {
     height: 100%;
 }
+
 .apartments,
 .houses {
-    background-color: #212529;
+    background-color: var(--secondary-color);
 }
+
 .card {
-    background-color: #fff;
-    margin-bottom: 50px;
+    background-color: var(--third-color);
+    margin-bottom: 20px;
 }
+
 .section-title {
-    color: #fff;
-    background-color: #212529;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
 }
+
+#contact {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+}
+
+#wappIcon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("./assets/icons/whatsapp_icon.png");
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #footer {
-    background-color: #107c7c;
-    color: aliceblue;
+    background-color: var(--principal-color);
+    color: var(--third-color);
 }
+
 #footer a {
+    color: var(--third-color);
     text-decoration: none;
-    color: #000;
+    font-family: var(--secondary-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.card-title,
+small,
+h2 {
+    font-family: var(--principal-font);
+}
+
+.btn,
+.card-text,
+.card-header,
+.list-group {
+    font-family: var(--secondary-font);
 }

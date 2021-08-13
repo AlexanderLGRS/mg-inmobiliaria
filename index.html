@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>MG Inmobiliaria</title>
@@ -11,7 +14,7 @@
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #E69C24;">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--principal-color);">
         <div class="container">
             <a class="navbar-brand" href="#">Logo y nombre</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,22 +23,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0" id="navbar">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#main">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Inmuebles
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Apartamentos</a></li>
-                            <li><a class="dropdown-item" href="#">Casas</a></li>
+                            <li><a class="dropdown-item" href="#apartments">Apartamentos</a></li>
+                            <li><a class="dropdown-item" href="#houses">Casas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#aboutUs">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
+                        <a class="nav-link" href="#contact">Contactenos</a>
                     </li>
                 </ul>
             </div>
@@ -55,10 +58,10 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6 offset-md-6 text-center text-md-end">
-                            <h1>MG Inmobiliaria</h1>
-                            <p class="d-none d-md-block">Si busca vivienda en venta o arriendo o quiere publicar su inmueble, MG Inmobiliaria es su mejor aliado.
+                            <h1 style="font-family: var(--principal-font);">MG Inmobiliaria</h1>
+                            <p class="d-none d-md-block" style="font-family: var(--secondary-font);">Si busca vivienda en venta o arriendo o quiere publicar su inmueble, MG Inmobiliaria es su mejor aliado.
                             </p>
-                            <a class="btn btn-dark" href="#">Contactenos</a>
+                            <a class="btn btn-dark" href="#contact">Contactenos</a>
                         </div>
                     </div>
                 </div>
@@ -68,10 +71,10 @@
     <!-- Main -->
 
     <!-- Apartaments -->
-    <section class="apartments">
+    <section class="apartments" id="apartments">
         <div class="container">
             <div class="row">
-                <div class="col text-center text-uppercase section-title my-5">
+                <div class="col text-center text-uppercase section-title my-3">
                     <small>Conoce nuestros</small>
                     <h2>Apartamentos disponibles</h2>
                 </div>
@@ -191,10 +194,10 @@
     <!-- Apartaments -->
 
     <!-- Houses -->
-    <section class="houses">
+    <section class="houses" id="houses">
         <div class="container">
             <div class="row">
-                <div class="col text-center text-uppercase section-title my-5">
+                <div class="col text-center text-uppercase section-title my-3">
                     <small>Conoce nuestras</small>
                     <h2>Casas disponibles</h2>
                 </div>
@@ -314,8 +317,52 @@
     <!-- Houses -->
 
     <!-- About us -->
-
+    <section id="aboutUs">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/icons/city_medium.jpg" class="d-block w-100" alt="Hawaii1">
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <h1 style="font-family: var(--principal-font);">MG Inmobiliaria</h1>
+                            <p style="font-family: var(--principal-font);">VENTA Y ARRENDAMIENTO DE INMUEBLES</p>
+                            <p class="d-none d-md-block" style="font-family: var(--secondary-font);">Agente inmobiliario enfocado en la venta y arrendamiento de inmuebles en la ciudad de Bogotá y sus alrededores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- About us -->
+
+    <!-- Contact us -->
+    <section class="contact container-fluid p-5" id="contact">
+        <div class="row">
+            <div class="col-6 offset-6 text-end">
+                <h1 style="font-family: var(--principal-font);">Contactenos</h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label" style="font-family: var(--principal-font);">Correo electronico</label>
+                    <input type="email" class="form-control text-end" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" style="font-family: var(--principal-font);">Escriba su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="buttons d-flex justify-content-evenly">
+                        <button type="button" class="btn btn-success mt-4">Enviar</button>
+                        <button type="button" class="btn btn-success mt-4"><a
+                                href="https://wa.me/qr/VYKEAEPEM2B5C1"><span id="wappIcon"></span>WhatsApp</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us -->
 
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
