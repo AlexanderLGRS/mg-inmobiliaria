@@ -33,11 +33,11 @@
     filter: grayscale(70%);
 }
 
-#carousel {
+#principal-carousel {
     position: relative;
 }
 
-#carousel .overlay {
+#principal-carousel .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,8 +48,8 @@
     z-index: 1;
 }
 
-#carousel .overlay .container,
-#carousel .overlay .row {
+#principal-carousel .overlay .container,
+#principal-carousel .overlay .row {
     height: 100%;
 }
 
@@ -104,6 +104,10 @@ a {
 small,
 h2 {
     font-family: var(--principal-font);
+}
+
+small {
+    font-size: 20px;
 }
 
 .btn,
