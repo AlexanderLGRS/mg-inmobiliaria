@@ -21,6 +21,12 @@
     font-family: var(--principal-font);
 }
 
+.dropdown-item,
+.navbarDropdown {
+    color: var(--third-color);
+    background-color: var(--principal-color);
+}
+
 #main .carousel-inner img {
     max-height: 70vh;
     object-fit: cover;
@@ -54,7 +60,8 @@
 }
 
 .apartments,
-.houses {
+.houses,
+.locals {
     background-color: var(--secondary-color);
 }
 
@@ -115,4 +122,8 @@ small {
 .card-header,
 .list-group {
     font-family: var(--secondary-font);
+}
+
+a:hover {
+    color: var(--third-color);
 }
