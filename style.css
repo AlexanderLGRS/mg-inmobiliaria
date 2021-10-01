@@ -107,6 +107,24 @@ a {
     color: var(--third-color);
 }
 
+.cacrd .carousel {
+    display: flex;
+    align-items: center;
+}
+
+.card .carousel .carousel-inner {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #212529bf;
+}
+
+.card .carousel .carousel-inner img {
+    object-fit: cover;
+}
+
 .card-title,
 small,
 h2 {
