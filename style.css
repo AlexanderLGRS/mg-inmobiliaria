@@ -107,7 +107,7 @@ a {
     color: var(--third-color);
 }
 
-.cacrd .carousel {
+.card .carousel {
     display: flex;
     align-items: center;
 }
